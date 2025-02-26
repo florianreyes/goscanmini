@@ -6,10 +6,16 @@ This is a small project to learn and practice Go, it scans ports and saves them 
 ## Installation
 
 ```go
+// Clone the repository
 git clone https://github.com/florianreyes/goscanmini
 
+// cd into the repo
 cd goscanmini
 
+// cd into scripts
+cd scripts
+
+// Run the installator
 ./install.sh
 ```
 

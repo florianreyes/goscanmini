@@ -2,7 +2,7 @@
 
 BINARY_NAME="goscanm"
 INSTALL_DIR="/usr/local/bin"
-SOURCE_FILE="goscanm.go"
+SOURCE_FILE="../cmd/main.go"
 
 # Ensure Go is installed
 if ! command -v go &> /dev/null; then
@@ -46,5 +46,8 @@ if [[ "$choice" == "y" || "$choice" == "-y" ]]; then
         exit 1
     fi
 else
-    echo "[*] Installation skipped."
+    echo -e "[*] Installation skipped. \n[*] Moving to directory root"
+    # Move the binary to /usr/local/bin
+    mv "$BINARY_NAME" ../ 
+    chmod +x "../$BINARY_NAME"  
 fi

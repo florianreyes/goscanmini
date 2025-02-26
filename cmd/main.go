@@ -13,6 +13,9 @@ import (
 )
 
 func main() {
+
+	pkg.ShowBanner()
+
 	// Define flags
 	hostFlag := flag.String("host", "", "The host to scan (e.g. 10.10.10.17)")
 	portFlag := flag.String("p", "", "Comma-Separated values of ports to scan (e.g. 80,443,3306)")

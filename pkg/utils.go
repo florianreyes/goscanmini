@@ -10,3 +10,16 @@ func PrintUsage() {
 	fmt.Println("Flags:")
 	flag.PrintDefaults()
 }
+
+func ShowBanner() {
+	banner := `
+   ___     ___                  __  __ _      _ 
+  / __|___/ __| __ __ _ _ _ ___|  \/  (_)_ _ (_)
+ | (_ / _ \__ \/ _/ _' | ' \___| |\/| | | ' \| |
+  \___\___/___/\__\__,_|_||_|  |_|  |_|_|_||_|_|
+
+	Author: CharlieGauss
+	`
+	// Print the banner
+	fmt.Println(banner)
+}

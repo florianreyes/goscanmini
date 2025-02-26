@@ -18,7 +18,7 @@ cd scripts
 // Run the installator
 ./install.sh
 ```
-- When prompted to move the file to /usr/local/bin you might need to input sudo password
+- When prompted to move the file to `/usr/local/bin` you might need to input sudo password
 - If `n` selected, the executable will be moved to the root of the `goscanmini` directory
 
 ## Usage
